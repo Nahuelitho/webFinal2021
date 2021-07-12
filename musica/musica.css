@@ -1,0 +1,69 @@
+/*Control + h selecciono todos los elementos con una misma palabra*/
+.img{
+  padding-left: 80px;
+}
+body {
+    margin-top:4px ;
+    margin-left: 25px;
+    background: url("music.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+    
+}
+#body{ 
+  
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+}
+/*Div de reproduccion*/
+#playlist{
+    color: white;
+    border-radius: 15px;
+    margin-left: 20%;
+    background:rgb(107, 107, 107);
+    width:500px;
+    height: 4100px;
+    padding: 25px;
+    /*padding:200px;*/
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+/*Caja de cada audio*/
+
+
+#menu{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);   
+    transition: all 4.5s;
+  align-items: center;
+  padding-right:380px;
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 11px;
+  width: auto;
+  height: 40px;
+  
+  margin-right: 20px;
+  padding-left: 5px;
+  background-color: rgb(174, 165, 138);
+  overflow: hidden;
+}
+#menu a{
+  margin-left: 50px;
+  float:left;
+  color:black;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+#menu a:hover{
+  background-color: rgb(130, 106, 63);
+  color: white;
+}

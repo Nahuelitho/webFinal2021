@@ -1,0 +1,121 @@
+/**{
+    margin: 0;
+    padding: 0;
+    Le quito las propiedades por defecto
+}*/
+
+#body {/*
+    width: 1300px;
+    height: 40px;*/
+    background-color: rgb(207, 231, 237);
+    
+    
+   
+}
+#menu{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);   
+    transition: all 4.5s;
+    display: block;
+    padding-bottom: 11px;
+    width: auto;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    background-color: rgb(151, 198, 214);
+    overflow: hidden;
+    
+}
+#menu a{
+    
+    float:left;
+    color: rgb(15, 26, 31);
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#menu a:hover{
+    background-color: rgb(47, 101, 123);
+    color: white;
+}
+#presentacion{
+    
+    background-color: rgba(0,0,0,0.5); 
+    width: auto;
+    height: 1000px;
+    text-align: center;
+    color: white;
+    
+}
+#titulo{
+   padding-top: 50px; 
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 4px 2px rgba(179, 179, 179, 0.9);
+}
+
+#p1 {
+    text-align: center;
+    font-size: 40px;
+}
+#audio{
+    float: right;
+}
+#botones {   
+    height: 50px;
+    width: auto;
+    background-color: rgba(0,0,0,0.5);;
+}
+.boton{
+    background-color: black;
+    color: white;
+    opacity: 1.0;
+    margin-top: 15px;
+}
+ #menuD {
+     font-size: 20px;
+     text-decoration: none;
+     color: white;
+     padding: 10px;
+     background-color: black;
+     border-radius: 15px;
+     border: 1.5px solid white;
+ }
+ #comidas {
+     list-style-type: none;
+     display: none;
+ }
+ #comidas li{
+     margin-right: 25px;
+     padding: 10px;
+ }
+ .dropdown {
+    border: 2px solid rgb(255, 196, 0);
+     position: relative;
+     display: inline-block;
+ }
+ .dropdown-contenido{
+    border: 2px solid rgb(255, 183, 0);
+     display: none;
+     position: absolute;
+     background-color: #8c6001;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+ }
+ .dropdown:hover .dropdown-contenido{
+     display: block;
+ }
+ .desc{
+     
+     padding: 15px;
+     color: rgb(255, 255, 255);
+     text-align: center;
+ }
+ #p{
+     font-size: 35px;
+     
+ }

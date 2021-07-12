@@ -1,0 +1,72 @@
+#menu{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);   
+    transition: all 4.5s;
+  float: right;
+  padding-bottom: 11px;
+  width: 1000px;
+  height: 40px;
+  margin-left: 200px;
+  
+  padding-left: 50px;
+  background-color: rgb(0, 49, 65);
+  overflow: hidden;
+  margin-bottom: 150px;
+  display: inline;
+  margin-left: 40%;
+}
+#menu a{
+  
+  float:left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+#menu a:hover{
+  background-color: rgb(47, 101, 123);
+  color: white;
+}
+#audio{
+  float: right;
+  margin-bottom: 50px;
+}
+#body {/*
+    width: 1300px;
+    height: 40px;*/
+    background: url("darkness.png") no-repeat center center fixed;
+    background-size: cover;
+   
+}
+
+#pacman {
+  height: 470px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+#shim {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  visibility: hidden
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: yellow;
+}
+
+body {
+  width: 800px;
+  margin: 0px auto;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0000FF;
+}

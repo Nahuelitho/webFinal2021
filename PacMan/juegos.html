@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="shorcut icon" href="smiley.png">
+    <title>HTML5 Pacman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="juegos.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      @font-face {
+	    font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+      }
+      #pacman {
+        height:450px;
+        width:342px;
+        margin:20px auto;
+      }
+      #shim { 
+        font-family: BDCartoonShoutRegular; 
+        position:absolute;
+        visibility:hidden
+      }
+      h1 { font-family: BDCartoonShoutRegular; text-align:center; }
+      body { width:342px; margin:0px auto; font-family:sans-serif; }
+      a { text-decoration:none; }
+    </style>
+
+</head>
+
+<body id="body">
+
+  <div id="menu">
+    <a href="../index.html">Inicio</a>
+    <a href="../comprar.html">Comprar</a>
+    <a href="../reservar.html">Reservar</a>
+    <a href="juegos.html">Juego</a>
+    <a href="../musica/musica.html">Rock Nacional</a>
+    <a href="../agenda.html">Agenda Virtual</a>
+    
+</div>
+<audio controls id="audio" volume="50" >
+  <source src="David Guetta Feat. Kid Cudi - Memories (Official Video)-(144p).mp4" type="audio/mpeg">
+</audio>
+  <div id="shim">shim for font face</div>
+
+ 
+
+  
+
+  <div id="pacman"></div>
+
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+</body>
+</html>

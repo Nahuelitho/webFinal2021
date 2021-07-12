@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="reservar.css" rel="stylesheet" type="text/css">
+        <link rel="shorcut icon" href="reservado.png">
+        <title>Reservas</title>
+    </head>
+    <body>
+        
+                   
+        
+        <div id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="comprar.html">Comprar</a>
+            <a href="reservar.html">Reservar</a>
+            <a href="PacMan/juegos.html">Juego</a>
+            <a href="musica/musica.html">Rock Nacional</a>
+            <a href="agenda.html">Agenda Virtual</a>
+            <audio controls id="audio" volume="50" >
+                <source src="esta canción te dará buenas vibras-(144p).mp4" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="reserva">
+           <div id="contenedor">
+            <h3>&#128516;-Formulario para Reservas-&#128516;</h3>
+            <form onsubmit="return enviar(event)" >
+                
+                <label >Nombre: </label>
+                <br>
+                <input onblur="validacion()" autocomplete="off" id="nombre"  type="text" id="nombre"  placeholder="escriba su nombre aqui.." >
+                
+                <p style="color: yellow;" id="nombreValidar" class="textoValidacion"></p>
+                <label >Correo: </label>
+                <br>
+                <input type="text" id="correo"  placeholder="escriba su direccion de correo aqui.." >
+                
+                <p style="color: yellow;" id="correoValidar"></p>
+                <br>
+                <label>Mesa</label>
+                <br>
+                <input list="browsers" name="browser">
+               <datalist id="browsers">
+                   <option value="Mesa 1">
+                   <option value="Mesa 2">
+                   <option value="Mesa 3">
+                   <option value="Mesa 4">
+               </datalist>
+               <p id="mesaValidacion"></p>
+               <br>
+               <label >Hora
+               <br>
+               <input list="hora" name="hora">
+               <datalist id="hora">
+                   <option value="15hs">
+                   <option value="14hs">
+                   <option value="13hs">
+                   <option value="12hs">
+                </label>
+               </datalist>
+               <p id="horaValidacion"></p>
+                <br>
+                <br>
+                <label>Comentario
+                <br>
+                <textarea id="mensaje"  cols="30" rows="10" maxlength="200"></textarea>
+                <p style="color:yellow;" id="msjValidar"></p>
+                </label>
+                <br>
+                <br>
+                <input id="enviar" type="submit" value="Enviar Reserva"/>
+                <div>
+                    <ul id="nodoPadre"> </ul>
+                </div>
+            </form>
+            
+        </div>
+        </div>
+
+        <script type="text/javascript" src="fomulario.js"></script> 
+    </body>
+</html>
+        
